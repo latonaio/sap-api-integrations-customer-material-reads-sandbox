@@ -89,9 +89,9 @@ func (c *SAPAPICaller) AsyncGetCustomerMaterial(salesOrganization, distributionC
 ```
 
 ## Output  
-本マイクロサービスでは、[golang-logging-library](https://github.com/latonaio/golang-logging-library) により、以下のようなデータがJSON形式で出力されます。  
+本マイクロサービスでは、[golang-logging-library-for-sap](https://github.com/latonaio/golang-logging-library-for-sap) により、以下のようなデータがJSON形式で出力されます。  
 以下の sample.json の例は、SAP 得意先品目データ　が取得された結果の JSON の例です。  
-以下の項目のうち、"SalesOrganization" ～ "SalesQtyToBaseQtyNmrtr" は、/SAP_API_Output_Formatter/type.go 内 の Type CustomerMaster {} による出力結果です。"cursor" ～ "time"は、golang-logging-library による 定型フォーマットの出力結果です。  
+以下の項目のうち、"SalesOrganization" ～ "SalesQtyToBaseQtyNmrtr" は、/SAP_API_Output_Formatter/type.go 内 の Type CustomerMaster {} による出力結果です。"cursor" ～ "time"は、golang-logging-library-for-sap による 定型フォーマットの出力結果です。  
 
 ```
 {
@@ -121,6 +121,6 @@ func (c *SAPAPICaller) AsyncGetCustomerMaterial(salesOrganization, distributionC
 			"SalesQtyToBaseQtyNmrtr": "0"
 		}
 	],
-	"time": "2021-12-30T14:52:39.375183+09:00"
+	"time": "2022-01-27T22:06:11+09:00"
 }
 ```
